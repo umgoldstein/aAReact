@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <script type="text/jsx" src="autocomplete_input.js"></script>
+    <title></title>
+    <script type="text/jsx">
+    React.render(<AutoCompleteInput names={["Albert","Josef","Xavier"]}/>, document.getElementById('search'));
+    React.render(<WeatherClock />, document.getElementById('weather-clock'));
+    React.render(<Tabs dogs={[{name: "corgis", description: " are very lazy"}, {name: "beagles", description: " are very loud"}, {name: "aussies", description: " are very smart"}]}/>, document.getElementById('tabs'));
+    </script>
+  </head>
+  <body>
+    <h1>Widgets</h1>
+    <div id="search"></div>
+    <div id="weather-clock"></div>
+    <div id="tabs"></div>
+  </body>
+</html>
